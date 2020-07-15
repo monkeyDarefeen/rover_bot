@@ -11,6 +11,7 @@ This a simple 4 wheeled robot/rover example for those who are new to ROS or GAZE
 
 to run the simulation, download/clone the git, and catkin_make it:
 
+```roslaunch rover_bot spawn.launch```
 
 it will launch the control file as well.
 
