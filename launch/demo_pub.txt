@@ -1,0 +1,11 @@
+rostopic pub  /rover/right_back_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"
+
+
+rostopic pub  /rover/left_back_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"
+
+
+rostopic pub  /rover/right_front_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"
+
+
+rostopic pub  /rover/left_front_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"
+

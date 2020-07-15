@@ -1,0 +1,23 @@
+rover:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  right_back_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: right_back_wheel_joint
+    pid: {p: 100.0, i: 0.01, d: 0.1}
+  left_back_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: left_back_wheel_joint
+    pid: {p: 100.0, i: 0.01, d: 0.1}
+  right_front_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: right_front_wheel_joint
+    pid: {p: 100.0, i: 0.01, d: 0.1}
+  left_front_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: left_front_wheel_joint
+    pid: {p: 100.0, i: 0.01, d: 0.1}
