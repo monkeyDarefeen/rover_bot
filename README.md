@@ -1,5 +1,5 @@
 # rover_bot
-
+# 4 wheeled robot
 This a simple 4 wheeled robot/rover example for those who are new to ROS or GAZEBO. The robot description is easy to understand and modify. I will go though it briefly here. The robot joints uses hardware_interface/VelocityJointInterface hardware interface and gazebo_ros_control to control the 4 wheels separately.
 
 /urdf/materials.xacro includes color names which was not used.
