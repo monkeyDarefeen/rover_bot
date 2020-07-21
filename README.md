@@ -15,21 +15,13 @@ to run the simulation, download/clone the git, and catkin_make it:
 
 it will launch the control file as well.
 
-to run controller.py, 
+to run the robot in desired position in gazebo like (1,1 or 5,4) or any run the below command, 
+
+```~/catkin_ws/src/rover_bot/scripts $ python odo.py```
 
 ```~/catkin_ws/src/rover_bot/scripts $ python r_c_p.py```
 
-See the r_c_p.py file and change the velocity or make a new one.
+See the r_c_p.py file and change the velocity or change the potition you want the robot to go.
+Robot is configured in such way so when rotating, it rotates in the direction which will take less time to face the goal position.
 
-if you want to send velocity/data from command line, use following line to send:
-
-```rostopic pub  /rover/right_back_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"```
-
-```rostopic pub  /rover/left_back_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"```
-
-```rostopic pub  /rover/right_front_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"```
-
-```rostopic pub  /rover/left_front_wheel_controller/command std_msgs/Float64 -r 10 "data: 0.5"```
-
-
-Feel free to use it, update it.
+Feel free to use it, update it or make suggestions.
